@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" id="check" /><label for="check"
+        ><i class="fa fa-bars"></i><i class="fa fa-times"></i
+      ></label>
+      <div class="nav">
+        <div class="img">
+          <div class="btn">
+            <div class="btn1">
+            <h3>Aniket Gujar</h3>
+            <p>~Web Developer</p>
+          </div>
+          </div>
+        </div>
+        <ul>
+          <li><i class="fa fa-home"></i><a href="#home">home</a></li>
+          <li><i class="fa fa-user"></i><a href="#about">about me</a></li>
+          <li>
+            <i class="fa fa-picture-o"></i><a href="#creation">My Creation</a>
+          </li>
+          <li>
+            <i class="fa fa-address-card"></i><a href="#contact">contact me</a>
+          </li>
+          <li><i class="fa fa-download"></i><a href="">cv</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div id="imgBox">
+          <img src="img/click2A.jpg" id="f-img" width="500px" height="400px" />
+          <span onclick="closeImg()">x</span>
+        </div>
+        <div class="box1" id="home">
+          <div class="back"></div>
+          <div class="box">
+            <div class="main-img">
+              <img src="img/digo.jpg" onclick="openBox(this.src)" />
+            </div>
+          </div>
+          <div id="name">
+            <h3>Aniket Gujar</h3>
+            <p>~Work Place</p>
+          </div>
+        </div>
+        <div id="about">
+          <h2 style="margin-top: 10px">About Me</h2>
+          <p>
+            Some text about me. Some text about me. I am lorem ipsum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <h2 style="margin-top: 10px">My Skills</h2>
+          <div class="box2">
+            <div class="skils">
+              <h3>Web Development</h3>
+              <div class="progress">
+                <div class="dev"></div>
+              </div>
+            </div>
+            <div class="skils">
+              <h3>Photoshop</h3>
+              <div class="progress"><div class="ps"></div></div>
+            </div>
+            <div class="skils">
+              <h3>Photoghraphy</h3>
+              <div class="progress"><div class="photo"></div></div>
+            </div>
+            <div class="box3">
+              <div class="summary">
+                <h2>11+</h2>
+                <h3>Partners</h3>
+              </div>
+              <div class="summary">
+                <h2>33+</h2>
+                <h3>Projects Done</h3>
+              </div>
+              <div class="summary">
+                <h2>50+</h2>
+                <h3>Happy Clients</h3>
+              </div>
+              <div class="summary">
+                <h2>100+</h2>
+                <h3>Users</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="creation">
+          <h2>My Creations</h2>
+          <div class="row">
+            <img src="img/bird.jpg" alt="bird" onclick="openBox(this.src)" />
+            <img src="img/click.jpg" alt="" onclick="openBox(this.src)" />
+            <img src="img/click1.jpg" alt="" onclick="openBox(this.src)" />
+            <img src="img/click2A.jpg" alt="" onclick="openBox(this.src)" />
+            <img src="img/click3.jpg" alt="" onclick="openBox(this.src)" />
+            <img src="img/wolf.jpg" alt="" onclick="openBox(this.src)" />
+            <img src="img/nebull-1.jpg" alt="" onclick="openBox(this.src)" />
+            <img src="img/tp.jpg" alt="" onclick="openBox(this.src)" />
+            <img src="img/poster.jpg" alt="" onclick="openBox(this.src)" />
+          </div>
+        </div>
+        <div id="contact">
+          <h2>Contact ME</h2>
+          <ul>
+            <li><i class="fa fa-map-marker"></i> Mumbai, Maharashtra</li>
+            <li><i class="fa fa-phone"></i>Phone: +022767675</li>
+            <li><i class="fa fa-envelope"></i>email@email.com</li>
+          </ul>
+          <p>Let's get in touch with me. end me a messege</p>
+          <input type="text" id="user" placeholder="Name" />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="text" id="subject" placeholder="Subject" />
+          <input type="text" id="messege" placeholder="messege" />
+          <button type="submit">Send <i class="fa fa-paper-plane"></i></button>
+        </div>
+        <div id="footer">
+          <h3>Connect Me On</h3>
+          <ul>
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-linkedin"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      var img = document.getElementById("f-img");
+      function openBox(pic) {
+        document.getElementById("imgBox").style.display = "flex";
+        img.src = pic;
+      }
+      function closeImg() {
+        document.getElementById("imgBox").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
