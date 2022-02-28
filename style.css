@@ -453,3 +453,12 @@
   background: #4267b2;
   border: 2px solid white;
 }
+@media screen and (max-width:500px) {
+  .box3 .summary h3{
+    font-size: .8em;
+    padding: 0;line-height: 20px;
+  }
+  #contact button{
+    font-size: .9em;
+  }
+}
